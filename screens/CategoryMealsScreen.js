@@ -1,15 +1,16 @@
 import React from 'react';
-import { View, FlatList, Text, StyleSheet } from 'react-native';
+import { View, FlatList, StyleSheet } from 'react-native';
 
 import { CATEGORIES, MEALS } from "../data/dummy-data";
-import Colors from "../constants/Colors";
+import MealItem from "../components/MealItem";
 
 const CategoryMealScreen = ({ navigation }) => {
     const renderMealItem = itemData => {
         return (
-            <View>
-                <Text>{itemData.item.title}</Text>
-            </View>
+            <MealItem
+                onSelectMeal={() => {}}
+                itemData={itemData.item}
+            />
         )
     };
 
@@ -22,6 +23,7 @@ const CategoryMealScreen = ({ navigation }) => {
                 data={displayedMeals}
                 keyExtractor={(item, index) => item.id}
                 renderItem={renderMealItem}
+                style={{width: '100%'}}
             />
         </View>
     );
