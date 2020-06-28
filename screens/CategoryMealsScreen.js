@@ -8,7 +8,14 @@ const CategoryMealScreen = ({ navigation }) => {
     const renderMealItem = itemData => {
         return (
             <MealItem
-                onSelectMeal={() => {}}
+                onSelectMeal={() => {
+                    navigation.navigate({
+                        routeName: 'MealDetail',
+                        params: {
+                            mealId: itemData.item.id
+                        }
+                    });
+                }}
                 itemData={itemData.item}
             />
         )
