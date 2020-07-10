@@ -1,4 +1,5 @@
 import React from "react";
+import { Text } from "react-native";
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import { Platform } from "react-native";
@@ -17,6 +18,12 @@ import FiltersScreen from "../screens/FiltersScreen";
 const defaultStackNavOptions = {
     headerStyle: {
         backgroundColor: Platform.OS === 'android' ? Colors.primaryColor: '',
+    },
+    headerTitleStyle: {
+        fontFamily: 'roboto-slab-bold'
+    },
+    headerBackTitleStyle: {
+        fontFamily: 'roboto-slab'
     },
     headerTintColor: Platform.OS === 'android' ? '#fff' : Colors.primaryColor,
     headerTitle: 'A Screen'
@@ -49,17 +56,17 @@ const tabScreenConfig = {
     Meals: {
         screen: MealsNavigator,
         navigationOptions: {
-            tabBarLabel: 'Meals',
-            tabBarIcon: tabInfo => {
+            tabBarLabel: <Text style={{fontFamily: 'roboto-slab-bold'}}>Meals</Text>,
+                tabBarIcon: tabInfo => {
                 return <Ionicons name="ios-restaurant" size={25} color={tabInfo.tintColor} />
             },
-            tabBarColor: Colors.primaryColor
+            tabBarColor: Colors.primaryColor,
         }
     },
     Favorites: {
         screen: FavNavigator,
         navigationOptions: {
-            tabBarLabel: 'Favorites',
+            tabBarLabel: <Text style={{fontFamily: 'roboto-slab-bold'}}>Favorites</Text>,
             tabBarIcon: tabInfo => {
                 return <Ionicons name="ios-star" size={25} color={tabInfo.tintColor} />
             },
@@ -78,8 +85,11 @@ const MealsFavTabNavigator = Platform.OS === 'android'
     })
     : createBottomTabNavigator({
         tabScreenConfig
-}, {
+    }, {
     tabBarOptions: {
+        labelStyle: {
+            fontFamily: 'roboto-slab'
+        },
         activeTintColor: Colors.accentColor
     }
 });
