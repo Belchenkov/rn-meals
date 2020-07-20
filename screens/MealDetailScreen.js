@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ScrollView, View, Text, StyleSheet, Image } from 'react-native';
 import { HeaderButtons, Item } from 'react-navigation-header-buttons';
 import { useSelector } from "react-redux";
@@ -17,7 +17,6 @@ const ListItem = ({ children }) => {
 const MealDetailScreen = ({ navigation }) => {
     const mealId = navigation.getParam('mealId');
     const meals = useSelector(state => state.meals.meals);
-
     const selectedMeal = meals.find(meal => meal.id === mealId);
 
     return (
@@ -45,7 +44,8 @@ const MealDetailScreen = ({ navigation }) => {
 
 MealDetailScreen.navigationOptions = navigationData => {
     const mealId = navigationData.navigation.getParam('mealId');
-    const selectedMeal = MEALS.find(meal => meal.id === mealId);
+    const mealTitle = navigationData.navigation.getParam('mealTitle');
+    //const selectedMeal = MEALS.find(meal => meal.id === mealId);
 
     return {
         headerTitle: selectedMeal.title,
