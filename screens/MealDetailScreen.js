@@ -1,10 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useCallback } from 'react';
 import { ScrollView, View, Text, StyleSheet, Image } from 'react-native';
 import { HeaderButtons, Item } from 'react-navigation-header-buttons';
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 
 import CustomHeaderButton from "../components/HeaderButton";
 import DefaultText from "../components/DefaultText";
+import { toggleFavorite } from "../store/actions/meals";
 
 const ListItem = ({ children }) => {
     return (
@@ -18,6 +19,17 @@ const MealDetailScreen = ({ navigation }) => {
     const mealId = navigation.getParam('mealId');
     const meals = useSelector(state => state.meals.meals);
     const selectedMeal = meals.find(meal => meal.id === mealId);
+    const dispatch = useDispatch();
+
+    const toggleFavoriteHandler = useCallback(() => {
+        dispatch(toggleFavorite(mealId));
+    }, [dispatch, mealId]);
+
+    useEffect(() => {
+        navigation.setParams({
+            toggleFav: toggleFavoriteHandler
+        })
+    }, [toggleFavoriteHandler]);
 
     return (
         <ScrollView>
@@ -43,17 +55,17 @@ const MealDetailScreen = ({ navigation }) => {
 };
 
 MealDetailScreen.navigationOptions = navigationData => {
-    const mealId = navigationData.navigation.getParam('mealId');
+    // const mealId = navigationData.navigation.getParam('mealId');
     const mealTitle = navigationData.navigation.getParam('mealTitle');
-    //const selectedMeal = MEALS.find(meal => meal.id === mealId);
+    const toggleFavorite = navigationData.navigation.getParam('toggleFav');
 
     return {
-        headerTitle: selectedMeal.title,
+        headerTitle: mealTitle,
         headerRight: <HeaderButtons HeaderButtonComponent={CustomHeaderButton}>
             <Item
                 title='Favorite'
                 iconName='ios-star'
-                onPress={() => {}}
+                onPress={toggleFavorite}
             />
         </HeaderButtons>
     };
