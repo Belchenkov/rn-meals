@@ -1,0 +1,343 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200724.155530.11744.0.001.json",
+    "dumpEventTime": "2020-07-24T15:55:30Z",
+    "dumpEventTimeStamp": "1595595330850",
+    "processId": 11744,
+    "cwd": "C:\\laragon\\www\\react-native\\rn-meals",
+    "commandLine": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\laragon\\www\\react-native\\rn-meals\\node_modules\\jest-worker\\build\\workers\\processChild.js"
+    ],
+    "nodejsVersion": "v13.7.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "13.7.0",
+      "v8": "7.9.317.25-node.28",
+      "uv": "1.34.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "79",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.1",
+      "openssl": "1.1.1d",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v13.7.0/node-v13.7.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v13.7.0/node-v13.7.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v13.7.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.18362",
+    "osVersion": "Windows 10 Pro",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "AMD Ryzen 3 2200G with Radeon Vega Graphics    ",
+        "speed": 3500,
+        "user": 17347921,
+        "nice": 0,
+        "sys": 9798515,
+        "idle": 155758203,
+        "irq": 1753453
+      },
+      {
+        "model": "AMD Ryzen 3 2200G with Radeon Vega Graphics    ",
+        "speed": 3500,
+        "user": 17309812,
+        "nice": 0,
+        "sys": 5963015,
+        "idle": 159631515,
+        "irq": 161281
+      },
+      {
+        "model": "AMD Ryzen 3 2200G with Radeon Vega Graphics    ",
+        "speed": 3500,
+        "user": 16693687,
+        "nice": 0,
+        "sys": 5912421,
+        "idle": 160298234,
+        "irq": 119734
+      },
+      {
+        "model": "AMD Ryzen 3 2200G with Radeon Vega Graphics    ",
+        "speed": 3500,
+        "user": 17718265,
+        "nice": 0,
+        "sys": 6003062,
+        "idle": 159183000,
+        "irq": 122062
+      }
+    ],
+    "host": "DESKTOP-3H7DJJT"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff7c1101c09",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7c1105f7c",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7c1104f38",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7c11febcb",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7c1a27fee",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7c1a0f741",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7c18d67ac",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7c18de80b",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7c18d3cf3",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7c18d2484",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7c18f4554",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7c164e841",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7c1e7154d",
+      "symbol": ""
+    },
+    {
+      "pc": "0x0000007b30cee652",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 27906048,
+    "totalCommittedMemory": 27906048,
+    "usedMemory": 23209080,
+    "availableMemory": 2175217888,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 33040,
+        "used": 33040,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 1048576,
+        "committedMemory": 1048576,
+        "capacity": 1047424,
+        "used": 1047408,
+        "available": 16
+      },
+      "old_space": {
+        "memorySize": 17702912,
+        "committedMemory": 17702912,
+        "capacity": 17657216,
+        "used": 14280080,
+        "available": 3377136
+      },
+      "code_space": {
+        "memorySize": 1478656,
+        "committedMemory": 1478656,
+        "capacity": 1389408,
+        "used": 819328,
+        "available": 570080
+      },
+      "map_space": {
+        "memorySize": 1314816,
+        "committedMemory": 1314816,
+        "capacity": 1312384,
+        "used": 998400,
+        "available": 313984
+      },
+      "large_object_space": {
+        "memorySize": 6049792,
+        "committedMemory": 6049792,
+        "capacity": 6028040,
+        "used": 6028040,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2784,
+        "used": 2784,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047424,
+        "used": 0,
+        "available": 1047424
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 23.375,
+    "kernelCpuSeconds": 2.031,
+    "cpuConsumptionPercent": 3.04263,
+    "maxRss": 392589312,
+    "pageFaults": {
+      "IORequired": 331465,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 2614,
+      "writes": 343
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "ANDROID_HOME": "C:\\Users\\Belchenkov\\AppData\\Local\\Android\\Sdk",
+    "APPDATA": "C:\\Users\\Belchenkov\\AppData\\Roaming",
+    "BABEL_ENV": "undefined",
+    "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
+    "ChocolateyLastPathUpdate": "132313398383197527",
+    "CLASSPATH": ".;",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "DESKTOP-3H7DJJT",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "dp0": "C:\\Users\\Belchenkov\\AppData\\Roaming\\npm\\",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "ELECTRON_RUN_AS_NODE": "1",
+    "FORCE_COLOR": "0",
+    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+    "GoLand": "C:\\Program Files\\JetBrains\\GoLand 2020.1.1\\bin;",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\Belchenkov",
+    "IDEA_INITIAL_DIRECTORY": "C:\\Users\\Belchenkov\\Desktop",
+    "JAVA_HOME": "C:\\Program Files\\AdoptOpenJDK\\jdk8u192-b12",
+    "LOCALAPPDATA": "C:\\Users\\Belchenkov\\AppData\\Local",
+    "LOGONSERVER": "\\\\DESKTOP-3H7DJJT",
+    "NUMBER_OF_PROCESSORS": "4",
+    "NVM_HOME": "C:\\Users\\Belchenkov\\AppData\\Roaming\\nvm",
+    "NVM_SYMLINK": "C:\\Program Files\\nodejs",
+    "OneDrive": "C:\\Users\\Belchenkov\\OneDrive",
+    "OS": "Windows_NT",
+    "PATH": "C:\\laragon\\www\\react-native\\rn-meals\\node_modules\\.bin;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\7-Zip;C:\\laragon\\bin\\php\\php-7.2.19-Win32-VC15-x64;C:\\ProgramData\\chocolatey\\bin;C:\\Users\\Belchenkov\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\Git\\cmd;C:\\Program Files\\AdoptOpenJDK\\jdk8u192-b12\\bin;C:\\Program Files\\Java\\jdk1.8.0_211\\bin;C:\\Android\\android-sdk\\tools;C:\\Android\\android-sdk\\platform-tools;C:\\Android\\android-sdk\\tools\\bin;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Ruby27-x64\\bin;C:\\Python38-32\\Scripts\\;C:\\Python38-32\\;C:\\Users\\Belchenkov\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2020.1.2\\bin;;C:\\Users\\Belchenkov\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\heroku\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2019.2.4\\bin;;C:\\Users\\Belchenkov\\AppData\\Roaming\\npm;C:\\Users\\Belchenkov\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\JetBrains\\WebStorm 2020.1.3\\bin;;C:\\Program Files\\JetBrains\\PyCharm 2020.1\\bin;;C:\\Program Files\\JetBrains\\GoLand 2020.1.1\\bin;;C:\\Program Files\\JetBrains\\RubyMine 2020.1.1\\bin;;C:\\flutter\\bin;C:\\Users\\Belchenkov\\AppData\\Local\\Android\\Sdk\\tools;C:\\Users\\Belchenkov\\AppData\\Local\\Android\\Sdk\\platform-tools;",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.RB;.RBW",
+    "PhpStorm": "C:\\Program Files\\JetBrains\\PhpStorm 2020.1.2\\bin;",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "AMD64 Family 23 Model 17 Stepping 0, AuthenticAMD",
+    "PROCESSOR_LEVEL": "23",
+    "PROCESSOR_REVISION": "1100",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "PyCharm": "C:\\Program Files\\JetBrains\\PyCharm 2020.1\\bin;",
+    "PyCharm Community Edition": "C:\\Program Files\\JetBrains\\PyCharm Community Edition 2019.2.4\\bin;",
+    "REACT_NATIVE_APP_ROOT": "C:\\laragon\\www\\react-native\\rn-meals",
+    "RubyMine": "C:\\Program Files\\JetBrains\\RubyMine 2020.1.1\\bin;",
+    "RUBYOPT": "-Eutf-8",
+    "SESSIONNAME": "Console",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\BELCHE~1\\AppData\\Local\\Temp",
+    "TERMINAL_EMULATOR": "JetBrains-JediTerm",
+    "TMP": "C:\\Users\\BELCHE~1\\AppData\\Local\\Temp",
+    "USERDOMAIN": "DESKTOP-3H7DJJT",
+    "USERDOMAIN_ROAMINGPROFILE": "DESKTOP-3H7DJJT",
+    "USERNAME": "Belchenkov",
+    "USERPROFILE": "C:\\Users\\Belchenkov",
+    "VBOX_MSI_INSTALL_PATH": "C:\\Program Files\\Oracle\\VirtualBox\\",
+    "WebStorm": "C:\\Program Files\\JetBrains\\WebStorm 2020.1.3\\bin;",
+    "windir": "C:\\WINDOWS",
+    "_prog": "node",
+    "__INTELLIJ_COMMAND_HISTFILE__": "C:\\Users\\Belchenkov\\AppData\\Roaming\\JetBrains\\WebStorm2020.1\\terminal\\history\\history-99"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\MSASN1.dll",
+    "C:\\WINDOWS\\System32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\System32\\profapi.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMMBASE.dll",
+    "C:\\WINDOWS\\System32\\cfgmgr32.dll",
+    "C:\\WINDOWS\\System32\\bcryptPrimitives.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\System32\\powrprof.dll",
+    "C:\\WINDOWS\\System32\\UMPDC.dll",
+    "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\System32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\system32\\wshbth.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL"
+  ]
+}
